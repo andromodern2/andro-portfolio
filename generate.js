@@ -1226,7 +1226,7 @@ const htmlContent = `<!DOCTYPE html>
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 6px 0 16px;
+        padding: clamp(230px, 36vh, 320px) 0 20px;
       }
       .hero-meta-bar {
         gap: 8px;
