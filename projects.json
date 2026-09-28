@@ -1,0 +1,109 @@
+[
+  {
+    "id": "proj-1790593310996",
+    "title": "CHRONOS AETHER",
+    "category": "E-Commerce",
+    "description": "A luxury Swiss timepiece landing page featuring an interactive 3D skeleton watch background that plays forward as you scroll down and reverses as you scroll up, complete with VIP concierge ordering and horology specs.",
+    "image": "assets/uploads/1790593231757-Screenshot_2026-09-27_190239.png",
+    "liveUrl": "https://dim-firefly-w8ha38f.shipstatic.com",
+    "tags": [],
+    "year": "2026",
+    "featured": false
+  },
+  {
+    "id": "proj-1",
+    "title": "Modern Corporate Showcase",
+    "category": "B2B & Professional Services",
+    "description": "A sleek, minimalist business landing page engineered to establish brand authority, showcase corporate solutions, and capture prospective enterprise leads.",
+    "image": "assets/project1.jpg",
+    "liveUrl": "https://wa.me/9647810768984?text=Hi%20Mohammad,%20I%20am%20interested%20in%20a%20Corporate%20Showcase%20website",
+    "tags": [
+      "Dynamic Hero",
+      "Enterprise Lead-Gen",
+      "Consultation Booking",
+      "Framer/Next.js"
+    ],
+    "year": "2026",
+    "featured": true
+  },
+  {
+    "id": "proj-2",
+    "title": "High-Velocity E-Commerce & Local Store",
+    "category": "Retail & Direct-to-Consumer",
+    "description": "A streamlined storefront built with a rapid WhatsApp-checkout flow, allowing customers to browse catalogs and order directly from mobile devices with zero friction.",
+    "image": "assets/project3.jpg",
+    "liveUrl": "https://wa.me/9647810768984?text=Hi%20Mohammad,%20I%20am%20interested%20in%20an%20E-Commerce%20WhatsApp%20store",
+    "tags": [
+      "WhatsApp Checkout",
+      "Mobile-First",
+      "Instant Filter",
+      "Zero-Friction Order"
+    ],
+    "year": "2026",
+    "featured": true
+  },
+  {
+    "id": "proj-3",
+    "title": "Creator & Personal Brand Hub",
+    "category": "Portfolio & Content Strategy",
+    "description": "An interactive digital hub designed for digital creators to centralize portfolio assets, social followings, newsletter capture, and brand sponsorship inquiries.",
+    "image": "assets/project2.jpg",
+    "liveUrl": "https://wa.me/9647810768984?text=Hi%20Mohammad,%20I%20am%20interested%20in%20a%20Creator%20Brand%20Hub",
+    "tags": [
+      "Creator Strategy",
+      "Social Proof",
+      "Lead Capture",
+      "High-Converting UI"
+    ],
+    "year": "2026",
+    "featured": true
+  },
+  {
+    "id": "proj-4",
+    "title": "Enterprise FinTech Analytics Suite",
+    "category": "Web Applications",
+    "description": "Clean, intuitive real-time financial tracking dashboard with responsive telemetry, market analytics, and interactive data visualization.",
+    "image": "assets/project2.jpg",
+    "liveUrl": "https://wa.me/9647810768984?text=Hi%20Mohammad,%20I%20am%20interested%20in%20a%20Web%20Application",
+    "tags": [
+      "Dashboard UI",
+      "Analytics",
+      "Interactive Data",
+      "Responsive Stack"
+    ],
+    "year": "2025",
+    "featured": false
+  },
+  {
+    "id": "proj-5",
+    "title": "Interactive 3D Agency Web Experience",
+    "category": "Interactive & 3D",
+    "description": "Immersive digital agency platform leveraging WebGL motion, fluid scrolling, and spatial storytelling to captivate prospective clients.",
+    "image": "assets/project1.jpg",
+    "liveUrl": "https://wa.me/9647810768984?text=Hi%20Mohammad,%20I%20am%20interested%20in%20a%203D%20Experience",
+    "tags": [
+      "Motion Design",
+      "WebGL",
+      "Framer",
+      "Smooth Scroll"
+    ],
+    "year": "2025",
+    "featured": false
+  },
+  {
+    "id": "proj-6",
+    "title": "Minimalist High-Fashion Atelier",
+    "category": "Retail & Direct-to-Consumer",
+    "description": "Luxury fashion and apparel showcase with smooth product transitions, lookbooks, and high-speed catalog browsing.",
+    "image": "assets/card1.jpg",
+    "liveUrl": "https://wa.me/9647810768984?text=Hi%20Mohammad,%20I%20am%20interested%20in%20an%20Online%20Store",
+    "tags": [
+      "Luxury Branding",
+      "Lookbook",
+      "E-Commerce",
+      "Speed Optimized"
+    ],
+    "year": "2025",
+    "featured": false
+  }
+]
