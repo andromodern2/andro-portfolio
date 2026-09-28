@@ -259,6 +259,46 @@
       30%, 50%, 70% { transform: translate3d(-6px, 0, 0); }
       40%, 60% { transform: translate3d(6px, 0, 0); }
     }
+    @media (max-width: 600px) {
+      .owner-modal-card {
+        padding: 22px 18px;
+        border-radius: 22px;
+        max-height: 92vh;
+      }
+      .owner-header {
+        margin-bottom: 16px;
+        padding-bottom: 14px;
+      }
+      .owner-title-badge {
+        font-size: 15.5px;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .form-control {
+        padding: 10px 14px;
+        font-size: 13.5px;
+      }
+      .owner-tabs {
+        overflow-x: auto;
+        gap: 6px;
+        padding-bottom: 8px;
+      }
+      .owner-tab-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+        white-space: nowrap;
+      }
+      .owner-proj-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .btn-delete-proj {
+        align-self: flex-end;
+      }
+    }
   `;
   document.head.appendChild(style);
 

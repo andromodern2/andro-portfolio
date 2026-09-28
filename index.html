@@ -1007,65 +1007,441 @@
       font-weight: 600;
     }
 
-    /* Responsive */
+    /* Mobile Menu Toggle Button */
+    .mobile-menu-btn {
+      display: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-top: 1.2px solid rgba(255, 255, 255, 0.32);
+      color: #ffffff;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+    .mobile-menu-btn:active {
+      transform: scale(0.95);
+      background: rgba(255, 72, 17, 0.2);
+      border-color: rgba(255, 72, 17, 0.4);
+    }
+
+    /* Mobile Navigation Dropdown */
+    .mobile-nav-panel {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 20px;
+      right: 20px;
+      z-index: 100;
+      background: rgba(13, 15, 20, 0.94);
+      backdrop-filter: blur(24px) saturate(140%);
+      -webkit-backdrop-filter: blur(24px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-top: 1.2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 24px;
+      padding: 14px;
+      flex-direction: column;
+      gap: 4px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    }
+    .mobile-nav-panel.active {
+      display: flex;
+      animation: slideDownNav 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes slideDownNav {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .mobile-nav-link {
+      color: rgba(255, 255, 255, 0.88);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 12px 18px;
+      border-radius: 14px;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .mobile-nav-link:hover, .mobile-nav-link:active {
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+    }
+    .mobile-nav-link.highlight {
+      background: rgba(255, 72, 17, 0.14);
+      border: 1px solid rgba(255, 72, 17, 0.3);
+      color: var(--orange-tag);
+    }
+
+    /* =========================================================
+       TABLET & IPAD OPTIMIZATIONS (max-width: 1024px)
+       ========================================================= */
     @media (max-width: 1024px) {
+      .page-wrapper {
+        padding: 0 28px;
+      }
+      .navbar {
+        padding: 20px 0 16px;
+      }
+      .nav-links {
+        gap: 2px;
+      }
+      .nav-links a {
+        font-size: 13px;
+        padding: 6px 10px;
+      }
+      .hero-card {
+        min-height: auto;
+        padding: 16px 0 36px;
+      }
       .hero-main {
         flex-direction: column;
         align-items: stretch;
-        gap: 30px;
+        gap: 32px;
+        margin: 10px 0 28px;
       }
-      .hero-left, .hero-right {
+      .hero-left {
+        max-width: 100%;
+        text-align: left;
+      }
+      .hero-left .hero-title {
+        font-size: clamp(30px, 4.4vw, 42px);
+        line-height: 1.15;
+      }
+      .hero-right {
         max-width: 100%;
         text-align: left;
         align-items: flex-start;
+        padding: 26px 28px;
+        border-radius: 28px;
       }
       .hero-right .hero-subheadline {
         text-align: left;
+        font-size: 15.5px;
       }
       .hero-cta-group {
         justify-content: flex-start;
       }
       .hero-services {
         grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
+        gap: 16px;
+        padding-top: 26px;
       }
       .tech-strip {
-        border-radius: 36px;
+        border-radius: 30px;
         flex-direction: column;
         align-items: flex-start;
-        padding: 30px 28px;
-        gap: 20px;
+        padding: 24px 26px;
+        gap: 16px;
+        margin: 32px 0 65px;
+      }
+      .tech-label {
+        max-width: 100%;
+        font-size: 12px;
       }
       .tech-pills {
         justify-content: flex-start;
       }
-      .about-grid, .contact-main, .value-grid {
+      .about-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+        padding: 40px 32px;
+        border-radius: 30px;
+        gap: 32px;
+      }
+      .about-left .about-headline {
+        font-size: clamp(28px, 4vw, 40px);
+      }
+      .showcase-header {
+        align-items: flex-start;
+        gap: 20px;
       }
       .showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .value-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .contact-main {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 32px;
+      }
+      .contact-section {
+        padding: 40px 32px;
+        border-radius: 30px;
       }
     }
 
+    /* =========================================================
+       SMARTPHONE & SMALL TABLET OPTIMIZATIONS (max-width: 768px)
+       ========================================================= */
     @media (max-width: 768px) {
       .page-wrapper {
         padding: 0 20px;
       }
+      .navbar {
+        padding: 16px 0 12px;
+        position: relative;
+      }
+      .brand-logo {
+        font-size: 17px;
+        gap: 8px;
+      }
+      .brand-moniker {
+        font-size: 10px;
+        padding: 2px 7px;
+      }
       .nav-links {
         display: none;
       }
+      .mobile-menu-btn {
+        display: flex;
+      }
+      .nav-actions {
+        gap: 10px;
+      }
+      .btn-nav {
+        font-size: 12.5px;
+        padding: 6px 6px 6px 14px;
+        gap: 8px;
+      }
+      .btn-nav .icon-circle {
+        width: 24px;
+        height: 24px;
+      }
+      .hero-card {
+        padding: 10px 0 28px;
+      }
+      .hero-meta-bar {
+        gap: 8px;
+        margin-bottom: 14px;
+      }
+      .status-badge {
+        font-size: 11px;
+        padding: 5px 12px;
+      }
+      .location-badge {
+        font-size: 11.5px;
+      }
+      .hero-main {
+        gap: 22px;
+        margin: 8px 0 20px;
+      }
+      .hero-left .hero-eyebrow {
+        font-size: 13px;
+        margin-bottom: 8px;
+      }
+      .hero-left .hero-title {
+        font-size: clamp(24px, 6.8vw, 34px);
+        line-height: 1.15;
+        margin-bottom: 10px;
+      }
+      .hero-left .hero-role {
+        font-size: 12.5px;
+        line-height: 1.45;
+      }
+      .hero-right {
+        padding: 20px 18px;
+        border-radius: 22px;
+      }
+      .hero-right .hero-subheadline {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+      }
+      .hero-cta-group {
+        gap: 10px;
+        width: 100%;
+      }
+      .btn-orange {
+        font-size: 13px;
+        padding: 7px 7px 7px 18px;
+        gap: 10px;
+      }
+      .btn-orange .icon-circle-white {
+        width: 28px;
+        height: 28px;
+      }
+      .btn-secondary {
+        font-size: 13px;
+        padding: 9px 18px;
+      }
       .hero-services {
         grid-template-columns: 1fr;
+        gap: 12px;
+        padding-top: 20px;
       }
-      .about-grid, .contact-section {
-        padding: 36px 24px;
+      .service-item {
+        padding: 16px 18px;
+        border-radius: 18px;
+      }
+      .service-title {
+        font-size: 15px;
+      }
+      .service-desc {
+        font-size: 13px;
+      }
+      .tech-strip {
+        padding: 18px 18px;
+        border-radius: 22px;
+        margin: 26px 0 50px;
+        gap: 12px;
+      }
+      .tech-pill {
+        font-size: 12px;
+        padding: 6px 12px;
+      }
+      .about-section {
+        padding: 10px 0 50px;
+      }
+      .about-grid {
+        padding: 26px 20px;
+        border-radius: 24px;
+        gap: 24px;
+      }
+      .about-left .about-headline {
+        font-size: clamp(24px, 6.2vw, 32px);
+        margin-bottom: 14px;
+      }
+      .about-tagline {
+        font-size: 14px;
+        padding-left: 12px;
+        margin-bottom: 18px;
+      }
+      .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+      .stat-num {
+        font-size: 24px;
+      }
+      .stat-label {
+        font-size: 10px;
+      }
+      .showcase-section {
+        padding: 10px 0 50px;
+      }
+      .showcase-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 22px;
+      }
+      .showcase-header-left .showcase-title {
+        font-size: clamp(25px, 6.2vw, 34px);
+      }
+      .showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .project-card-body {
+        padding: 20px 18px 22px;
+      }
+      .value-section {
+        padding: 10px 0 50px;
+      }
+      .value-header {
+        margin-bottom: 26px;
+      }
+      .value-title {
+        font-size: clamp(25px, 6.2vw, 34px);
+      }
+      .value-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .value-card {
+        padding: 20px 18px;
+        border-radius: 20px;
+        gap: 14px;
+      }
+      .value-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+      }
+      .value-text h3 {
+        font-size: 16px;
+      }
+      .value-text p {
+        font-size: 13px;
+      }
+      .contact-section {
+        padding: 26px 20px;
+        border-radius: 24px;
+        margin: 10px 0 45px;
+      }
+      .contact-left h2 {
+        font-size: clamp(25px, 6.5vw, 34px);
+      }
+      .contact-card-link {
+        padding: 13px 16px;
+        border-radius: 16px;
+        gap: 12px;
+      }
+      .contact-card-link .c-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
       }
       .site-footer {
         flex-direction: column;
-        gap: 16px;
+        gap: 14px;
         text-align: center;
+        padding: 28px 0 36px;
+      }
+    }
+
+    /* =========================================================
+       COMPACT SMARTPHONES (max-width: 480px)
+       ========================================================= */
+    @media (max-width: 480px) {
+      .page-wrapper {
+        padding: 0 16px;
+      }
+      .brand-logo {
+        font-size: 15px;
+      }
+      .brand-moniker {
+        font-size: 9.5px;
+        padding: 2px 6px;
+      }
+      .btn-nav span:first-child {
+        display: none;
+      }
+      .btn-nav::before {
+        content: 'Start';
+        font-size: 12px;
+      }
+      .btn-nav {
+        padding: 5px 5px 5px 12px;
+      }
+      .hero-left .hero-title {
+        font-size: 24px;
+      }
+      .hero-cta-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .btn-orange, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+      .about-stats {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .mobile-nav-panel {
+        left: 12px;
+        right: 12px;
       }
     }
   </style>
@@ -1084,7 +1460,7 @@
         <span class="brand-moniker">Andro</span>
       </a>
       <div class="nav-actions">
-        <!-- Floating Glass Nav Dock -->
+        <!-- Floating Glass Nav Dock for Tablets/Desktop -->
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -1100,8 +1476,40 @@
             </svg>
           </span>
         </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <!-- Mobile Navigation Dropdown Panel -->
+    <nav class="mobile-nav-panel" id="mobileNavPanel">
+      <a href="#home" class="mobile-nav-link">
+        <span>Home</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="#about" class="mobile-nav-link">
+        <span>About</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="#services" class="mobile-nav-link">
+        <span>Services</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="projects.html" class="mobile-nav-link highlight">
+        <span>Projects &bull; Selected Works</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="#contact" class="mobile-nav-link">
+        <span>Contact</span>
+        <span>&rarr;</span>
+      </a>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero-card" id="home">
@@ -1616,6 +2024,30 @@
       }
 
       requestAnimationFrame(render);
+    })();
+  </script>
+
+  <!-- Mobile Menu Interactions -->
+  <script>
+    (function() {
+      const btn = document.getElementById('mobileMenuBtn');
+      const panel = document.getElementById('mobileNavPanel');
+      if (btn && panel) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          panel.classList.toggle('active');
+        });
+        document.addEventListener('click', function(e) {
+          if (!panel.contains(e.target) && e.target !== btn) {
+            panel.classList.remove('active');
+          }
+        });
+        panel.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            panel.classList.remove('active');
+          });
+        });
+      }
     })();
   </script>
 
