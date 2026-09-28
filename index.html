@@ -1099,8 +1099,7 @@
       }
       .hero-card {
         min-height: auto;
-        padding-top: clamp(160px, 22vh, 260px);
-        padding-bottom: 36px;
+        padding: 16px 0 32px;
       }
       .hero-main {
         flex-direction: column;
@@ -1219,220 +1218,232 @@
         height: 24px;
       }
       .hero-card {
-        min-height: 100svh;
+        min-height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        padding-top: clamp(330px, 50svh, 440px);
-        padding-bottom: 24px;
+        justify-content: flex-start;
+        padding: 6px 0 16px;
       }
       .hero-meta-bar {
         gap: 8px;
-        margin-bottom: 12px;
+        margin-bottom: 6px;
       }
       .status-badge {
         font-size: 11px;
-        padding: 5px 12px;
+        padding: 4px 10px;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
       }
       .location-badge {
         font-size: 11.5px;
+        padding: 0;
       }
       .hero-main {
         flex-direction: column;
         align-items: stretch;
-        gap: 16px;
-        margin: 0 0 16px;
-        background: linear-gradient(135deg, rgba(14, 16, 22, 0.72) 0%, rgba(8, 9, 13, 0.85) 100%);
-        backdrop-filter: blur(14px) saturate(130%);
-        -webkit-backdrop-filter: blur(14px) saturate(130%);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-top: 1.2px solid rgba(255, 255, 255, 0.3);
-        border-radius: 24px;
-        padding: 22px 20px;
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+        gap: 8px;
+        margin: 4px 0 12px;
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
       }
       .hero-left {
         padding: 0;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
       }
       .hero-left .hero-eyebrow {
-        font-size: 13px;
-        margin-bottom: 6px;
+        font-size: 13.5px;
+        margin-bottom: 4px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
       }
       .hero-left .hero-title {
-        font-size: clamp(21px, 5.6vw, 26px);
-        line-height: 1.22;
+        font-size: clamp(23px, 6.4vw, 30px);
+        line-height: 1.18;
         letter-spacing: -0.025em;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
+        text-shadow: 0 3px 14px rgba(0, 0, 0, 0.95), 0 1px 4px rgba(0, 0, 0, 0.9);
       }
       .hero-left .hero-title br {
         display: none;
       }
       .hero-left .hero-role {
-        font-size: 12px;
+        font-size: 12.5px;
         line-height: 1.4;
-        color: rgba(255, 255, 255, 0.82);
+        color: rgba(255, 255, 255, 0.88);
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
+        margin-bottom: 2px;
       }
       .hero-right {
         padding: 0;
-        background: transparent;
-        border: none;
-        box-shadow: none;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
       }
       .hero-right .hero-subheadline {
         font-size: 13.5px;
-        line-height: 1.5;
-        margin-bottom: 14px;
+        line-height: 1.45;
+        margin-bottom: 12px;
         text-align: left;
-        color: rgba(255, 255, 255, 0.85);
+        color: rgba(255, 255, 255, 0.88);
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
       }
       .hero-cta-group {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 8px;
         width: 100%;
         justify-content: flex-start;
       }
       .btn-orange {
-        font-size: 12.5px;
-        padding: 8px 8px 8px 16px;
+        font-size: 12px;
+        padding: 7px 7px 7px 15px;
         flex: 1 1 auto;
         justify-content: center;
       }
       .btn-orange .icon-circle-white {
-        width: 26px;
-        height: 26px;
+        width: 24px;
+        height: 24px;
       }
       .btn-secondary {
-        font-size: 12.5px;
-        padding: 9px 16px;
+        font-size: 12px;
+        padding: 8px 14px;
         flex: 1 1 auto;
         justify-content: center;
       }
       .hero-services {
         grid-template-columns: 1fr;
-        gap: 12px;
-        padding-top: 20px;
+        gap: 10px;
+        padding-top: 14px;
       }
       .service-item {
-        padding: 16px 18px;
-        border-radius: 18px;
+        padding: 14px 16px;
+        border-radius: 16px;
       }
       .service-title {
-        font-size: 15px;
+        font-size: 14.5px;
       }
       .service-desc {
-        font-size: 13px;
+        font-size: 12.5px;
       }
       .tech-strip {
-        padding: 18px 18px;
-        border-radius: 22px;
-        margin: 26px 0 50px;
-        gap: 12px;
+        padding: 16px 16px;
+        border-radius: 18px;
+        margin: 18px 0 30px;
+        gap: 10px;
       }
       .tech-pill {
-        font-size: 12px;
-        padding: 6px 12px;
+        font-size: 11.5px;
+        padding: 5px 10px;
       }
       .about-section {
-        padding: 10px 0 50px;
+        padding: 8px 0 30px;
       }
       .about-grid {
-        padding: 26px 20px;
-        border-radius: 24px;
-        gap: 24px;
+        padding: 22px 18px;
+        border-radius: 20px;
+        gap: 20px;
       }
       .about-left .about-headline {
-        font-size: clamp(24px, 6.2vw, 32px);
-        margin-bottom: 14px;
+        font-size: clamp(23px, 6vw, 30px);
+        margin-bottom: 12px;
       }
       .about-tagline {
-        font-size: 14px;
-        padding-left: 12px;
-        margin-bottom: 18px;
+        font-size: 13.5px;
+        padding-left: 10px;
+        margin-bottom: 14px;
       }
       .about-stats {
         grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
+        gap: 6px;
       }
       .stat-num {
-        font-size: 24px;
+        font-size: 22px;
       }
       .stat-label {
-        font-size: 10px;
+        font-size: 9.5px;
       }
       .showcase-section {
-        padding: 10px 0 50px;
+        padding: 8px 0 30px;
       }
       .showcase-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 16px;
-        margin-bottom: 22px;
+        gap: 12px;
+        margin-bottom: 16px;
       }
       .showcase-header-left .showcase-title {
-        font-size: clamp(25px, 6.2vw, 34px);
+        font-size: clamp(24px, 6vw, 32px);
       }
       .showcase-grid {
         grid-template-columns: 1fr;
-        gap: 18px;
+        gap: 16px;
       }
       .project-card-body {
-        padding: 20px 18px 22px;
+        padding: 18px 16px 20px;
       }
       .value-section {
-        padding: 10px 0 50px;
+        padding: 8px 0 30px;
       }
       .value-header {
-        margin-bottom: 26px;
+        margin-bottom: 18px;
       }
       .value-title {
-        font-size: clamp(25px, 6.2vw, 34px);
+        font-size: clamp(24px, 6vw, 32px);
       }
       .value-grid {
         grid-template-columns: 1fr;
-        gap: 14px;
-      }
-      .value-card {
-        padding: 20px 18px;
-        border-radius: 20px;
-        gap: 14px;
-      }
-      .value-icon {
-        width: 38px;
-        height: 38px;
-        border-radius: 10px;
-      }
-      .value-text h3 {
-        font-size: 16px;
-      }
-      .value-text p {
-        font-size: 13px;
-      }
-      .contact-section {
-        padding: 26px 20px;
-        border-radius: 24px;
-        margin: 10px 0 45px;
-      }
-      .contact-left h2 {
-        font-size: clamp(25px, 6.5vw, 34px);
-      }
-      .contact-card-link {
-        padding: 13px 16px;
-        border-radius: 16px;
         gap: 12px;
       }
+      .value-card {
+        padding: 18px 16px;
+        border-radius: 18px;
+        gap: 12px;
+      }
+      .value-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
+      }
+      .value-text h3 {
+        font-size: 15.5px;
+      }
+      .value-text p {
+        font-size: 12.5px;
+      }
+      .contact-section {
+        padding: 22px 18px;
+        border-radius: 20px;
+        margin: 8px 0 28px;
+      }
+      .contact-left h2 {
+        font-size: clamp(24px, 6vw, 32px);
+      }
+      .contact-card-link {
+        padding: 12px 14px;
+        border-radius: 14px;
+        gap: 10px;
+      }
       .contact-card-link .c-icon {
-        width: 38px;
-        height: 38px;
-        border-radius: 10px;
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
       }
       .site-footer {
         flex-direction: column;
-        gap: 14px;
+        gap: 10px;
         text-align: center;
-        padding: 28px 0 36px;
+        padding: 20px 0 24px;
       }
     }
 
