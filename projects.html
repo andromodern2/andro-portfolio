@@ -934,11 +934,20 @@
 
     async function loadProjects() {
       try {
-        const res = await fetch('/api/projects');
+        let res = await fetch('/api/projects');
+        if (!res.ok) {
+          res = await fetch('projects.json');
+        }
         allProjects = await res.json();
         renderProjects();
       } catch (err) {
-        console.error('Failed to load projects:', err);
+        try {
+          const fallback = await fetch('projects.json');
+          allProjects = await fallback.json();
+          renderProjects();
+        } catch (e) {
+          console.error('Failed to load projects:', e);
+        }
       }
     }
 

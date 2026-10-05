@@ -633,7 +633,10 @@
   // Load projects in admin list
   async function loadAdminProjects() {
     try {
-      const res = await fetch('/api/projects');
+      let res = await fetch('/api/projects');
+      if (!res.ok) {
+        res = await fetch('projects.json');
+      }
       const list = await res.json();
       document.getElementById('dashProjCount').textContent = list.length;
       const container = document.getElementById('ownerProjList');
